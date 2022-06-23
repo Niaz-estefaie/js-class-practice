@@ -1,0 +1,104 @@
+<html>
+  <body>
+    <template>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p class="lerem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </template>
+
+    <script>
+        const number = 2;
+        const number2 = 22;
+
+        const newNum = 1;
+        const newNum2 = 10;
+
+        const string1 = "Niaz";
+        const string2 = "Niaz";
+
+        console.log(number > number2);
+        console.log(newNum < newNum2);
+        console.log(number > number2 && newNum < newNum2);
+
+      // ********************************************** //
+        // if - else - else-if
+
+        const hour = new Date().getHours();
+        let greeting;
+
+        if (hour < 10) {
+          greeting = "Good day";
+        } else if(hour === 10) {
+          greeting = "Good afternoon";
+        } else {
+          greeting = "Good evening";
+        }
+
+        console.log(greeting);
+
+        // switch
+        switch (hour) {
+          case 10:
+            greeting = "This is 10 o'clock";
+            break;
+          case 11:
+            greeting = "This is 11 o'clock";
+            break;
+
+          default:
+            greeting = "This is 11 o'clock";
+            break;
+        }
+
+      // ********************************************* //
+        const cars = ["BMW", "Volvo", "Mini", "Benz", "Saipa"];
+        const cars2 = [
+          {id: 1, name: "BMW"},
+          {id: 2, name: "Volvo"},
+          {id: 3, name: "Benz"},
+        ];
+        let text = "";
+        let array = [];
+
+        // for
+        for (let index = 0; index < cars.length; index++) {
+          text += cars[index];
+        }
+
+        console.log(text);
+
+        // for-of (values of an object)
+        for (let car of cars) {
+          text += car;
+        }
+
+        console.log(text);
+
+        // for-in (property of an object)
+        const person = { fname: "John", lname: "Doe", age: 25 };
+
+        for (let x in person) {
+          text += person[x];
+        }
+
+        // while
+        while (i < 10) {
+          text += "The number is " + i;
+          i++;
+        }
+
+        // do-while
+        let result = "";
+        let i = 0;
+
+        do {
+          i = i + 1;
+          result = result + i;
+        } while (i < 5);
+    </script>
+  </body>
+</html>

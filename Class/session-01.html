@@ -1,0 +1,41 @@
+<html>
+  <body>
+    <template>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </template>
+
+    <script>
+      const num = 2; // not able to be redeclared
+      let newNum = 1; // redeclareable
+      var string1 = "Niaz"; // old fasion type of variables
+
+      newNum = 8; // This variable will be redeclare just fine
+      // num = 5; // This may will an error in the console
+
+      // *************************************************** //
+      // Data structures
+
+      let string = "Fatemeh";
+      let number = 5;
+      let boolean = true; // or false
+      let notDefined = undefined;
+      let nullType = null;
+
+      let object = {
+        name: "Ali",
+        age: 22,
+        married: true,
+      };
+
+      let array = ["Niaz", "Fatemeh", "Anata"];
+
+      array = [
+        { id: "Niaz", age: 26 },
+        { id: "Anata", age: 27 },
+        { id: "Fatemeh", age: 28 },
+      ];
+
+      console.log(array);
+    </script>
+  </body>
+</html>
