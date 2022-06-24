@@ -11,6 +11,101 @@
 <script>
   // Write whatever you want here in script tag :)
   // Here is your playground
+  let array = [
+    {id:1,name:"fatemeh"},
+    "Fatemeh",
+    512,
+    null,
+    undefined,
+    true
+  ];
+  console.log(array);
+
+  let object = {
+    name:"Fatemeh",
+    age:17,
+    married:true,
+    job:undefined,
+    children:null,
+    interestedin: ['js','testing']
+  };
+  
+  // ********************************************** //
+      if (object.name == "Fatemeh") {
+      text = "Welcome Fatemeh";
+    }
+    else if(object.age < 18) {
+      text = "You're allowed to join once you've turned 18";
+    }
+    else{
+      text="welcome Guest Please sign up";
+    } 
+    console.log(text);
+  // ********************************************** //
+  const d = new Date();
+  let month = d.getMonth();
+  console.log(month);
+
+
+  switch (month) {
+          case 0 :
+            greeting = "it's Winter";
+            break;
+          case 1 :
+          greeting = "it's Winter";
+            break;
+            case 11 :
+          greeting = "it's Winter";
+            break;
+            case 2 :
+          greeting = "it's Spring";
+            break;
+            case 3 :
+          greeting = "it's Spring";
+            break;
+            case 4 :
+          greeting = "it's Spring";
+            break;
+            case 5 :
+          greeting = "it's Summer";
+            break;
+            case 6 :
+          greeting = "it's Summer";
+            break;
+            case 7 :
+          greeting = "it's Summer";
+            break;
+          default:
+            greeting = "it's Autunm";
+            break;
+        }
+    console.log(greeting);
+    
+      // ********************************************** //
+
+
+      let list = "";
+
+      let monthlist = ["January","February","March","April","May",
+      "June","July","August","September","October","November","December"]
+      for (let i = 0; i < 12 ; i++) {
+          list += monthlist[i] ;
+        }
+      console.log(list);
+
+      // ********************************************** //
+        let txt ="";
+      for (let monthname of monthlist) {
+          txt += monthname;
+        }
+
+        console.log(txt);
+
+
+
+
+
+
 </script>
 
 </html>
