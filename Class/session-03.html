@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <p>I'm a P tag.</p>
+    <p class="lorem-class">I have a class.</p>
+    <p id="lorem">I have an Id.</p>
+    <div>I'm a single div tag.</div>
+
+    <script>
+      let name = "";
+
+      const newMethod = () => {
+        name = prompt("Type your name here");
+      };
+      newMethod();
+
+      document.getElementsByTagName("p")[0].style.fontSize = "24px";
+      document.getElementsByTagName("p")[0].style.color = "red";
+      document.getElementById("lorem").style.color = "green";
+
+      const content = "Hello and welcome" + name + ":)";
+      document.getElementsByClassName("lorem-class").innerHTML += content;
+
+      let div = document.createElement("div");
+      div.append("<p>CreateElement example</p>");
+    </script>
+  </body>
+</html>
