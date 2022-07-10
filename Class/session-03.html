@@ -4,24 +4,31 @@
     <p class="lorem-class">I have a class.</p>
     <p id="lorem">I have an Id.</p>
     <div>I'm a single div tag.</div>
+    <input type="text" value="Hello world !" />
 
     <script>
-      let name = "";
+      let name = "Fatemeh";
 
       const newMethod = () => {
-        name = prompt("Type your name here");
+        // name = prompt("Type your name here");
+        console.log(name);
       };
       newMethod();
 
+      // Selectors of JS
+      // Reach the first element that matches the condition
+      const firstP = document.querySelector("p");
+
       document.getElementsByTagName("p")[0].style.fontSize = "24px";
-      document.getElementsByTagName("p")[0].style.color = "red";
-      document.getElementById("lorem").style.color = "green";
+      document.getElementsByTagName("p")[1].style.color = "red";
+      document.getElementById("lorem").style.color = "orange";
 
-      const content = "Hello and welcome" + name + ":)";
-      document.getElementsByClassName("lorem-class").innerHTML += content;
+      const content = "Hello and welcome " + name + " :)";
+      document.getElementById("lorem").innerHTML += content;
 
-      let div = document.createElement("div");
-      div.append("<p>CreateElement example</p>");
+      const parameter = document.createElement("p");
+      parameter.innerText = "This is a paragraph";
+      document.body.appendChild(parameter);
     </script>
   </body>
 </html>

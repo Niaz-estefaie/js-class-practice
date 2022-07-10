@@ -1,4 +1,4 @@
-const x = 1;
+let x = 1;
 x = -x;
 console.log(x); // output: -1
 
@@ -10,8 +10,9 @@ console.log(5 % 3); // output: 2
 
 console.log(2 ** 2); // output: 2² = 4
 
-const string = "my" + "string";
-console.log(s); // output: mystring
+const string = "Niaz " + "Fatemeh";
+console.log(string); // output: my string
+
 const mixedString = `This is ${string} and I know it !`;
 console.log(mixedString); // output: This is mystring and I know it !
 
@@ -23,7 +24,7 @@ console.log(6 - "2"); // output: 4, converts '2' to a number
 console.log("6" / "2"); // output: 3, converts both operands to numbers
 
 let y = "-2";
-console.log(+y); // output: -2
+console.log(-y); // output: -2
 
 // ********************************************************************* //
 
