@@ -22,9 +22,23 @@
     const inputValue = document.getElementById("number-input").value;
     
     const decrease = () => {
+     let test = document.getElementById('number-input').value;
+    //  console.log(test);
+
+  let up = document.getElementById('number-input').value;
+  // console.log(up);
+  up = isNaN(up) ? 0 : up;
+  up < 1 ? up = 1 : '';
+  up--;
+  document.getElementById('number-input').value = up;
       // Write decrease method here
     };
+
     const increase = () => {
+      let down = document.getElementById('number-input').value;
+      down = isNaN(down) ? 0 : down;
+      down++;
+  document.getElementById('number-input').value = down;
       // Write decrease method here
     };
   </script>
