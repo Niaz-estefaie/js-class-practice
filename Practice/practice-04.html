@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <body style="display: flex;">
-    <div style="margin: auto;">
+  <body style="display: flex">
+    <div style="margin: auto">
       <button
-        style="background: black; color: white; border-radius: 50%;width: 50px;height: 50px;font-size: 24px;cursor: pointer;"
+        style="
+          background: black;
+          color: white;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          font-size: 24px;
+          cursor: pointer;
+        "
         onclick="decrease()"
       >
         -
       </button>
-      <input type="number" id="number-input"value="10" />
+      <input type="number" id="number-input" value="10" />
       <button
-        style="background: black; color: white; border-radius: 50%;width: 50px;height: 50px;font-size: 24px;cursor: pointer;"
+        style="
+          background: black;
+          color: white;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          font-size: 24px;
+          cursor: pointer;
+        "
         onclick="increase()"
       >
         +
@@ -20,26 +36,22 @@
 
   <script>
     const inputValue = document.getElementById("number-input").value;
-    
-    const decrease = () => {
-     let test = document.getElementById('number-input').value;
-    //  console.log(test);
 
-  let up = document.getElementById('number-input').value;
-  // console.log(up);
-  up = isNaN(up) ? 0 : up;
-  up < 1 ? up = 1 : '';
-  up--;
-  document.getElementById('number-input').value = up;
-      // Write decrease method here
+    const decrease = () => {
+      let test = document.getElementById("number-input").value;
+
+      let up = document.getElementById("number-input").value;
+      up = isNaN(up) ? 0 : up;
+      up < 1 ? (up = 1) : "";
+      up--;
+      document.getElementById("number-input").value = up;
     };
 
     const increase = () => {
-      let down = document.getElementById('number-input').value;
+      let down = document.getElementById("number-input").value;
       down = isNaN(down) ? 0 : down;
       down++;
-  document.getElementById('number-input').value = down;
-      // Write decrease method here
+      document.getElementById("number-input").value = down;
     };
   </script>
 </html>
